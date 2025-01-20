@@ -1,0 +1,14 @@
+系统信息:
+OS: Linux harry-virtual-machine 6.8.0-49-generic #49~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Nov  6 17:42:15 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+CPU: 13th Gen Intel(R) Core(TM) i5-13600KF
+Compiler: Ubuntu clang version 14.0.0-1ubuntu1.1
+
+统计结果:
+          mean       std       min       max   speedup  improvement_percentage
+基础版本  0.018615  0.002562  0.016485  0.026773  1.000000                0.000000
+向量化   0.008169  0.000426  0.007323  0.009669  2.278777              127.877741
+AVX2  0.006883  0.001057  0.005419  0.008940  2.704560              170.456037
+
+性能提升分析:
+向量化 相比基础版本提升了 127.88%
+AVX2 相比基础版本提升了 170.46%

@@ -1,0 +1,21 @@
+Parameter,Compiler,Architecture,Elapsed Time (sec)
+5,gcc,aarch64,1.061898
+5,clang,aarch64,0.513467
+5,gcc,x64,0.097451
+5,clang,x64,0.021789
+15,gcc,aarch64,3.196594
+15,clang,aarch64,1.719076
+15,gcc,x64,0.245447
+15,clang,x64,0.054593
+30,gcc,aarch64,6.364298
+30,clang,aarch64,3.102822
+30,gcc,x64,0.579022
+30,clang,x64,0.107450
+60,gcc,aarch64,12.657595
+60,clang,aarch64,6.171263
+60,gcc,x64,1.090570
+60,clang,x64,0.213938
+90,gcc,aarch64,19.071403
+90,clang,aarch64,9.271482
+90,gcc,x64,1.484531
+90,clang,x64,0.324062

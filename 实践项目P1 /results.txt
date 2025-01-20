@@ -1,0 +1,345 @@
+python -u "/Users/harry/work/软件系统优化/实践项目P1：Matrix Multiplication Autotuner/test.py"
+(.conda) (base) harry@HUAWEI-MateBook-Pro 实践项目P1：Matrix Multiplication Autotuner % python -u "/Users/harry/work/软件系统优化/实践项目P1：Matrix Multiplication Autotuner/test.py"
+
+[Grid Search] Running round 1/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 1: 64.553497 seconds
+Time taken for block size 16 in round 1: 43.241676 seconds
+Time taken for block size 32 in round 1: 28.198547 seconds
+Time taken for block size 64 in round 1: 28.379265 seconds
+Time taken for block size 128 in round 1: 26.500376 seconds
+Time taken for block size 256 in round 1: 24.335985 seconds
+
+[Grid Search] Running round 2/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 2: 64.532707 seconds
+Time taken for block size 16 in round 2: 43.256615 seconds
+Time taken for block size 32 in round 2: 29.287975 seconds
+Time taken for block size 64 in round 2: 28.380281 seconds
+Time taken for block size 128 in round 2: 26.511946 seconds
+Time taken for block size 256 in round 2: 24.378340 seconds
+
+[Grid Search] Running round 3/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 3: 64.453033 seconds
+Time taken for block size 16 in round 3: 43.321918 seconds
+Time taken for block size 32 in round 3: 29.196604 seconds
+Time taken for block size 64 in round 3: 28.434389 seconds
+Time taken for block size 128 in round 3: 26.536022 seconds
+Time taken for block size 256 in round 3: 24.366714 seconds
+
+[Grid Search] Running round 4/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 4: 64.476501 seconds
+Time taken for block size 16 in round 4: 43.320232 seconds
+Time taken for block size 32 in round 4: 28.993746 seconds
+Time taken for block size 64 in round 4: 28.409689 seconds
+Time taken for block size 128 in round 4: 26.506340 seconds
+Time taken for block size 256 in round 4: 24.330578 seconds
+
+[Grid Search] Running round 5/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 5: 64.501595 seconds
+Time taken for block size 16 in round 5: 43.291409 seconds
+Time taken for block size 32 in round 5: 29.171057 seconds
+Time taken for block size 64 in round 5: 28.396257 seconds
+Time taken for block size 128 in round 5: 26.525169 seconds
+Time taken for block size 256 in round 5: 24.352451 seconds
+
+[Grid Search] Running round 6/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 6: 64.526459 seconds
+Time taken for block size 16 in round 6: 43.363476 seconds
+Time taken for block size 32 in round 6: 28.918018 seconds
+Time taken for block size 64 in round 6: 28.382595 seconds
+Time taken for block size 128 in round 6: 26.508606 seconds
+Time taken for block size 256 in round 6: 24.372131 seconds
+
+[Grid Search] Running round 7/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 7: 64.441719 seconds
+Time taken for block size 16 in round 7: 43.345402 seconds
+Time taken for block size 32 in round 7: 28.774252 seconds
+Time taken for block size 64 in round 7: 28.411642 seconds
+Time taken for block size 128 in round 7: 26.541836 seconds
+Time taken for block size 256 in round 7: 24.343822 seconds
+
+[Grid Search] Running round 8/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 8: 64.486794 seconds
+Time taken for block size 16 in round 8: 43.318642 seconds
+Time taken for block size 32 in round 8: 29.042570 seconds
+Time taken for block size 64 in round 8: 28.375341 seconds
+Time taken for block size 128 in round 8: 26.382401 seconds
+Time taken for block size 256 in round 8: 24.376305 seconds
+
+[Grid Search] Running round 9/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 9: 64.461441 seconds
+Time taken for block size 16 in round 9: 43.180569 seconds
+Time taken for block size 32 in round 9: 29.184376 seconds
+Time taken for block size 64 in round 9: 28.375967 seconds
+Time taken for block size 128 in round 9: 26.479687 seconds
+Time taken for block size 256 in round 9: 24.398073 seconds
+
+[Grid Search] Running round 10/10 for ./matrix_mult_010...
+Time taken for block size 8 in round 10: 64.477577 seconds
+Time taken for block size 16 in round 10: 43.176342 seconds
+Time taken for block size 32 in round 10: 29.385685 seconds
+Time taken for block size 64 in round 10: 28.438061 seconds
+Time taken for block size 128 in round 10: 26.609577 seconds
+Time taken for block size 256 in round 10: 24.345196 seconds
+Average time for block size 8: 64.491132 seconds
+Average time for block size 16: 43.281628 seconds
+Average time for block size 32: 29.015283 seconds
+Average time for block size 64: 28.398349 seconds
+Average time for block size 128: 26.510196 seconds
+Average time for block size 256: 24.359960 seconds
+
+[Grid Search] Best block size for ./matrix_mult_010: 256 with average time 24.359960 seconds
+
+Grid search completed in 2175.877822 seconds
+
+[Greedy Search] Starting with block size 32 and time 28.566034 seconds
+Time taken for block size 8: 64.339378 seconds
+Time taken for block size 16: 43.198929 seconds
+Time taken for block size 64: 28.374626 seconds
+[Greedy Search] Updated best block size to 64 with time 28.374626 seconds
+Time taken for block size 128: 26.449078 seconds
+[Greedy Search] Updated best block size to 128 with time 26.449078 seconds
+Time taken for block size 256: 24.405699 seconds
+[Greedy Search] Updated best block size to 256 with time 24.405699 seconds
+Average time for block size 8: 64.339378 seconds
+Average time for block size 16: 43.198929 seconds
+Average time for block size 32: 28.566034 seconds
+Average time for block size 64: 28.374626 seconds
+Average time for block size 128: 26.449078 seconds
+Average time for block size 256: 24.405699 seconds
+
+[Greedy Search] Best block size for ./matrix_mult_010: 256 with average time 24.405699 seconds
+
+Greedy search completed in 216.861254 seconds
+
+Comparison for ./matrix_mult_010:
+Grid Search: Best block size 256 with average time 24.359960 seconds, took 2175.877822 seconds
+Greedy Search: Best block size 256 with average time 24.405699 seconds, took 216.861254 seconds
+
+[Grid Search] Running round 1/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 1: 38.023945 seconds
+Time taken for block size 16 in round 1: 26.421223 seconds
+Time taken for block size 32 in round 1: 18.327991 seconds
+Time taken for block size 64 in round 1: 13.719742 seconds
+Time taken for block size 128 in round 1: 13.243178 seconds
+Time taken for block size 256 in round 1: 12.691676 seconds
+
+[Grid Search] Running round 2/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 2: 37.998184 seconds
+Time taken for block size 16 in round 2: 26.409241 seconds
+Time taken for block size 32 in round 2: 18.367247 seconds
+Time taken for block size 64 in round 2: 13.645789 seconds
+Time taken for block size 128 in round 2: 13.265229 seconds
+Time taken for block size 256 in round 2: 12.705241 seconds
+
+[Grid Search] Running round 3/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 3: 38.038223 seconds
+Time taken for block size 16 in round 3: 26.418049 seconds
+Time taken for block size 32 in round 3: 18.385220 seconds
+Time taken for block size 64 in round 3: 13.750013 seconds
+Time taken for block size 128 in round 3: 13.264741 seconds
+Time taken for block size 256 in round 3: 12.733508 seconds
+
+[Grid Search] Running round 4/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 4: 38.903381 seconds
+Time taken for block size 16 in round 4: 26.382832 seconds
+Time taken for block size 32 in round 4: 18.399162 seconds
+Time taken for block size 64 in round 4: 13.675440 seconds
+Time taken for block size 128 in round 4: 13.267522 seconds
+Time taken for block size 256 in round 4: 12.768715 seconds
+
+[Grid Search] Running round 5/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 5: 38.415062 seconds
+Time taken for block size 16 in round 5: 26.434555 seconds
+Time taken for block size 32 in round 5: 18.380726 seconds
+Time taken for block size 64 in round 5: 13.693993 seconds
+Time taken for block size 128 in round 5: 13.265568 seconds
+Time taken for block size 256 in round 5: 12.704681 seconds
+
+[Grid Search] Running round 6/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 6: 39.222881 seconds
+Time taken for block size 16 in round 6: 26.539347 seconds
+Time taken for block size 32 in round 6: 18.382584 seconds
+Time taken for block size 64 in round 6: 13.683604 seconds
+Time taken for block size 128 in round 6: 13.245003 seconds
+Time taken for block size 256 in round 6: 12.715340 seconds
+
+[Grid Search] Running round 7/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 7: 38.131580 seconds
+Time taken for block size 16 in round 7: 26.430008 seconds
+Time taken for block size 32 in round 7: 18.396229 seconds
+Time taken for block size 64 in round 7: 13.709618 seconds
+Time taken for block size 128 in round 7: 13.239125 seconds
+Time taken for block size 256 in round 7: 12.741939 seconds
+
+[Grid Search] Running round 8/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 8: 38.904842 seconds
+Time taken for block size 16 in round 8: 26.407373 seconds
+Time taken for block size 32 in round 8: 18.379400 seconds
+Time taken for block size 64 in round 8: 13.695830 seconds
+Time taken for block size 128 in round 8: 13.256833 seconds
+Time taken for block size 256 in round 8: 12.677205 seconds
+
+[Grid Search] Running round 9/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 9: 38.914650 seconds
+Time taken for block size 16 in round 9: 26.451763 seconds
+Time taken for block size 32 in round 9: 18.401384 seconds
+Time taken for block size 64 in round 9: 13.701919 seconds
+Time taken for block size 128 in round 9: 13.256854 seconds
+Time taken for block size 256 in round 9: 12.692564 seconds
+
+[Grid Search] Running round 10/10 for ./matrix_mult_020...
+Time taken for block size 8 in round 10: 38.324665 seconds
+Time taken for block size 16 in round 10: 26.453621 seconds
+Time taken for block size 32 in round 10: 18.369619 seconds
+Time taken for block size 64 in round 10: 13.722484 seconds
+Time taken for block size 128 in round 10: 13.260263 seconds
+Time taken for block size 256 in round 10: 12.686001 seconds
+Average time for block size 8: 38.487741 seconds
+Average time for block size 16: 26.434801 seconds
+Average time for block size 32: 18.378956 seconds
+Average time for block size 64: 13.699843 seconds
+Average time for block size 128: 13.256432 seconds
+Average time for block size 256: 12.711687 seconds
+
+[Grid Search] Best block size for ./matrix_mult_020: 256 with average time 12.711687 seconds
+
+Grid search completed in 1244.954140 seconds
+
+[Greedy Search] Starting with block size 32 and time 18.432152 seconds
+Time taken for block size 8: 38.345612 seconds
+Time taken for block size 16: 26.407049 seconds
+Time taken for block size 64: 13.714091 seconds
+[Greedy Search] Updated best block size to 64 with time 13.714091 seconds
+Time taken for block size 128: 13.251538 seconds
+[Greedy Search] Updated best block size to 128 with time 13.251538 seconds
+Time taken for block size 256: 12.702110 seconds
+[Greedy Search] Updated best block size to 256 with time 12.702110 seconds
+Average time for block size 8: 38.345612 seconds
+Average time for block size 16: 26.407049 seconds
+Average time for block size 32: 18.432152 seconds
+Average time for block size 64: 13.714091 seconds
+Average time for block size 128: 13.251538 seconds
+Average time for block size 256: 12.702110 seconds
+
+[Greedy Search] Best block size for ./matrix_mult_020: 256 with average time 12.702110 seconds
+
+Greedy search completed in 124.377318 seconds
+
+Comparison for ./matrix_mult_020:
+Grid Search: Best block size 256 with average time 12.711687 seconds, took 1244.954140 seconds
+Greedy Search: Best block size 256 with average time 12.702110 seconds, took 124.377318 seconds
+
+[Grid Search] Running round 1/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 1: 38.358566 seconds
+Time taken for block size 16 in round 1: 26.414017 seconds
+Time taken for block size 32 in round 1: 18.353451 seconds
+Time taken for block size 64 in round 1: 13.698548 seconds
+Time taken for block size 128 in round 1: 13.245193 seconds
+Time taken for block size 256 in round 1: 12.704187 seconds
+
+[Grid Search] Running round 2/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 2: 37.878376 seconds
+Time taken for block size 16 in round 2: 26.429783 seconds
+Time taken for block size 32 in round 2: 18.542156 seconds
+Time taken for block size 64 in round 2: 13.753841 seconds
+Time taken for block size 128 in round 2: 13.249024 seconds
+Time taken for block size 256 in round 2: 12.722515 seconds
+
+[Grid Search] Running round 3/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 3: 37.886292 seconds
+Time taken for block size 16 in round 3: 26.414164 seconds
+Time taken for block size 32 in round 3: 18.368910 seconds
+Time taken for block size 64 in round 3: 13.710656 seconds
+Time taken for block size 128 in round 3: 13.254611 seconds
+Time taken for block size 256 in round 3: 12.701276 seconds
+
+[Grid Search] Running round 4/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 4: 38.332169 seconds
+Time taken for block size 16 in round 4: 26.398251 seconds
+Time taken for block size 32 in round 4: 18.392513 seconds
+Time taken for block size 64 in round 4: 13.690163 seconds
+Time taken for block size 128 in round 4: 13.240979 seconds
+Time taken for block size 256 in round 4: 12.693864 seconds
+
+[Grid Search] Running round 5/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 5: 37.695194 seconds
+Time taken for block size 16 in round 5: 26.428568 seconds
+Time taken for block size 32 in round 5: 18.409040 seconds
+Time taken for block size 64 in round 5: 13.682615 seconds
+Time taken for block size 128 in round 5: 13.249610 seconds
+Time taken for block size 256 in round 5: 12.697089 seconds
+
+[Grid Search] Running round 6/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 6: 38.361412 seconds
+Time taken for block size 16 in round 6: 26.410975 seconds
+Time taken for block size 32 in round 6: 18.392927 seconds
+Time taken for block size 64 in round 6: 13.704075 seconds
+Time taken for block size 128 in round 6: 13.261420 seconds
+Time taken for block size 256 in round 6: 12.691975 seconds
+
+[Grid Search] Running round 7/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 7: 37.682346 seconds
+Time taken for block size 16 in round 7: 26.430960 seconds
+Time taken for block size 32 in round 7: 18.367208 seconds
+Time taken for block size 64 in round 7: 13.692503 seconds
+Time taken for block size 128 in round 7: 13.254255 seconds
+Time taken for block size 256 in round 7: 12.702913 seconds
+
+[Grid Search] Running round 8/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 8: 38.172371 seconds
+Time taken for block size 16 in round 8: 26.444584 seconds
+Time taken for block size 32 in round 8: 18.379786 seconds
+Time taken for block size 64 in round 8: 13.724502 seconds
+Time taken for block size 128 in round 8: 13.232434 seconds
+Time taken for block size 256 in round 8: 12.720397 seconds
+
+[Grid Search] Running round 9/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 9: 37.656136 seconds
+Time taken for block size 16 in round 9: 26.479937 seconds
+Time taken for block size 32 in round 9: 18.331968 seconds
+Time taken for block size 64 in round 9: 13.696792 seconds
+Time taken for block size 128 in round 9: 13.242730 seconds
+Time taken for block size 256 in round 9: 12.682633 seconds
+
+[Grid Search] Running round 10/10 for ./matrix_mult_030...
+Time taken for block size 8 in round 10: 38.363876 seconds
+Time taken for block size 16 in round 10: 26.412104 seconds
+Time taken for block size 32 in round 10: 18.375685 seconds
+Time taken for block size 64 in round 10: 13.717932 seconds
+Time taken for block size 128 in round 10: 13.251366 seconds
+Time taken for block size 256 in round 10: 12.723265 seconds
+Average time for block size 8: 38.038674 seconds
+Average time for block size 16: 26.426334 seconds
+Average time for block size 32: 18.391364 seconds
+Average time for block size 64: 13.707163 seconds
+Average time for block size 128: 13.248162 seconds
+Average time for block size 256: 12.704011 seconds
+
+[Grid Search] Best block size for ./matrix_mult_030: 256 with average time 12.704011 seconds
+
+Grid search completed in 1240.414202 seconds
+
+[Greedy Search] Starting with block size 32 and time 18.355366 seconds
+Time taken for block size 8: 37.972137 seconds
+Time taken for block size 16: 26.440636 seconds
+Time taken for block size 64: 13.688832 seconds
+[Greedy Search] Updated best block size to 64 with time 13.688832 seconds
+Time taken for block size 128: 13.293582 seconds
+[Greedy Search] Updated best block size to 128 with time 13.293582 seconds
+Time taken for block size 256: 12.676910 seconds
+[Greedy Search] Updated best block size to 256 with time 12.676910 seconds
+Average time for block size 8: 37.972137 seconds
+Average time for block size 16: 26.440636 seconds
+Average time for block size 32: 18.355366 seconds
+Average time for block size 64: 13.688832 seconds
+Average time for block size 128: 13.293582 seconds
+Average time for block size 256: 12.676910 seconds
+
+[Greedy Search] Best block size for ./matrix_mult_030: 256 with average time 12.676910 seconds
+
+Greedy search completed in 123.955349 seconds
+
+Comparison for ./matrix_mult_030:
+Grid Search: Best block size 256 with average time 12.704011 seconds, took 1240.414202 seconds
+Greedy Search: Best block size 256 with average time 12.676910 seconds, took 123.955349 seconds
+(.conda) (base) harry@HUAWEI-MateBook-Pro 实践项目P1：Matrix Multiplication Autotuner % 

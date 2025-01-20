@@ -1,0 +1,105 @@
+##STARTING Version 1.0
+2024年 11月 30日 星期六 18:52:13 CST
+##Compiler: clang clang++
+##CFlags: -I. -O2
+##CPPFlags: -std=c++14 -I. -O2
+./matrix_multiply 
+
+test                                   description   absolute   operations   ratio with
+number                                               time       per second   test0
+
+ 0                   "int32_t matrix multiply KIJ"   2.22 sec   4863.07 M     1.00
+ 1                   "int32_t matrix multiply KJI"   0.79 sec   13629.67 M     0.36
+ 2                   "int32_t matrix multiply JKI"   0.72 sec   14918.73 M     0.33
+ 3                   "int32_t matrix multiply JIK"   1.32 sec   8154.48 M     0.60
+ 4                   "int32_t matrix multiply IJK"   1.16 sec   9319.09 M     0.52
+ 5                   "int32_t matrix multiply IKJ"   2.26 sec   4776.82 M     1.02
+ 6              "int32_t matrix multiply KIJ temp"   1.95 sec   5530.99 M     0.88
+ 7              "int32_t matrix multiply KJI temp"   0.70 sec   15376.51 M     0.32
+ 8              "int32_t matrix multiply JKI temp"   0.68 sec   15783.29 M     0.31
+ 9              "int32_t matrix multiply JIK temp"   1.47 sec   7333.06 M     0.66
+10              "int32_t matrix multiply IJK temp"   1.45 sec   7470.25 M     0.65
+11              "int32_t matrix multiply IKJ temp"   1.90 sec   5672.39 M     0.86
+12          "int32_t matrix multiply KJI unrolled"   1.13 sec   9587.16 M     0.51
+13          "int32_t matrix multiply JKI unrolled"   1.12 sec   9675.11 M     0.50
+14           "int32_t matrix multiply JIK blocked"   1.73 sec   6257.23 M     0.78
+15           "int32_t matrix multiply JKI blocked"   0.79 sec   13672.11 M     0.36
+16           "int32_t matrix multiply IJK blocked"   1.70 sec   6348.73 M     0.77
+17 "int32_t matrix multiply JIK blocked unrolled1"   1.12 sec   9648.86 M     0.50
+18 "int32_t matrix multiply JIK blocked unrolled2"   1.12 sec   9639.16 M     0.50
+19 "int32_t matrix multiply JIK blocked unrolled3"   0.79 sec   13711.41 M     0.35
+20 "int32_t matrix multiply IJK blocked unrolled1"   1.15 sec   9417.23 M     0.52
+21 "int32_t matrix multiply IJK blocked unrolled2"   0.79 sec   13610.60 M     0.36
+22 "int32_t matrix multiply IJK blocked unrolled3"   1.15 sec   9398.21 M     0.52
+23 "int32_t matrix multiply JKI blocked unrolled1"   1.41 sec   7650.99 M     0.64
+24 "int32_t matrix multiply JKI blocked unrolled2"   0.78 sec   13902.51 M     0.35
+25 "int32_t matrix multiply JKI blocked unrolled3"   1.12 sec   9617.69 M     0.51
+
+Total absolute time for int32_t matrix multiply: 32.53 sec
+
+test                                 description   absolute   operations   ratio with
+number                                             time       per second   test0
+
+ 0                   "float matrix multiply KIJ"   2.34 sec   4622.29 M     1.00
+ 1                   "float matrix multiply KJI"   0.35 sec   31052.06 M     0.15
+ 2                   "float matrix multiply JKI"   0.36 sec   30199.99 M     0.15
+ 3                   "float matrix multiply JIK"   1.96 sec   5518.24 M     0.84
+ 4                   "float matrix multiply IJK"   1.87 sec   5779.14 M     0.80
+ 5                   "float matrix multiply IKJ"   2.39 sec   4525.55 M     1.02
+ 6              "float matrix multiply KIJ temp"   2.16 sec   5006.37 M     0.92
+ 7              "float matrix multiply KJI temp"   0.32 sec   33458.91 M     0.14
+ 8              "float matrix multiply JKI temp"   0.32 sec   34199.29 M     0.14
+ 9              "float matrix multiply JIK temp"   1.53 sec   7037.72 M     0.66
+10              "float matrix multiply IJK temp"   1.51 sec   7149.27 M     0.65
+11              "float matrix multiply IKJ temp"   2.15 sec   5016.64 M     0.92
+12          "float matrix multiply KJI unrolled"   0.79 sec   13659.25 M     0.34
+13          "float matrix multiply JKI unrolled"   0.79 sec   13658.84 M     0.34
+14           "float matrix multiply JIK blocked"   1.39 sec   7790.80 M     0.59
+15           "float matrix multiply JKI blocked"   0.35 sec   30880.52 M     0.15
+16           "float matrix multiply IJK blocked"   1.42 sec   7597.82 M     0.61
+17 "float matrix multiply JIK blocked unrolled1"   0.89 sec   12137.64 M     0.38
+18 "float matrix multiply JIK blocked unrolled2"   0.84 sec   12901.39 M     0.36
+19 "float matrix multiply JIK blocked unrolled3"   0.31 sec   34766.60 M     0.13
+20 "float matrix multiply IJK blocked unrolled1"   0.91 sec   11918.83 M     0.39
+21 "float matrix multiply IJK blocked unrolled2"   0.31 sec   35021.73 M     0.13
+22 "float matrix multiply IJK blocked unrolled3"   0.86 sec   12493.10 M     0.37
+23 "float matrix multiply JKI blocked unrolled1"   1.40 sec   7687.37 M     0.60
+24 "float matrix multiply JKI blocked unrolled2"   0.25 sec   43904.22 M     0.11
+25 "float matrix multiply JKI blocked unrolled3"   0.80 sec   13552.35 M     0.34
+
+Total absolute time for float matrix multiply: 28.55 sec
+
+test                                  description   absolute   operations   ratio with
+number                                              time       per second   test0
+
+ 0                   "double matrix multiply KIJ"   1.74 sec   3099.34 M     1.00
+ 1                   "double matrix multiply KJI"   0.34 sec   15802.46 M     0.20
+ 2                   "double matrix multiply JKI"   0.35 sec   15294.76 M     0.20
+ 3                   "double matrix multiply JIK"   0.99 sec   5467.42 M     0.57
+ 4                   "double matrix multiply IJK"   0.94 sec   5725.18 M     0.54
+ 5                   "double matrix multiply IKJ"   1.73 sec   3122.96 M     0.99
+ 6              "double matrix multiply KIJ temp"   1.62 sec   3342.68 M     0.93
+ 7              "double matrix multiply KJI temp"   0.31 sec   17169.18 M     0.18
+ 8              "double matrix multiply JKI temp"   0.32 sec   17119.11 M     0.18
+ 9              "double matrix multiply JIK temp"   0.81 sec   6700.08 M     0.46
+10              "double matrix multiply IJK temp"   0.77 sec   7017.40 M     0.44
+11              "double matrix multiply IKJ temp"   1.57 sec   3433.73 M     0.90
+12          "double matrix multiply KJI unrolled"   0.43 sec   12614.46 M     0.25
+13          "double matrix multiply JKI unrolled"   0.43 sec   12622.04 M     0.25
+14           "double matrix multiply JIK blocked"   0.72 sec   7518.22 M     0.41
+15           "double matrix multiply JKI blocked"   0.34 sec   15714.67 M     0.20
+16           "double matrix multiply IJK blocked"   0.72 sec   7505.11 M     0.41
+17 "double matrix multiply JIK blocked unrolled1"   0.51 sec   10593.97 M     0.29
+18 "double matrix multiply JIK blocked unrolled2"   0.43 sec   12585.15 M     0.25
+19 "double matrix multiply JIK blocked unrolled3"   0.27 sec   19899.18 M     0.16
+20 "double matrix multiply IJK blocked unrolled1"   0.52 sec   10438.62 M     0.30
+21 "double matrix multiply IJK blocked unrolled2"   0.26 sec   20858.20 M     0.15
+22 "double matrix multiply IJK blocked unrolled3"   0.44 sec   12290.24 M     0.25
+23 "double matrix multiply JKI blocked unrolled1"   0.83 sec   6468.49 M     0.48
+24 "double matrix multiply JKI blocked unrolled2"   0.23 sec   23246.30 M     0.13
+25 "double matrix multiply JKI blocked unrolled3"   0.43 sec   12517.79 M     0.25
+
+Total absolute time for double matrix multiply: 18.05 sec
+2024年 11月 30日 星期六 18:53:33 CST
+##END Version 1.0
+File size of matrix_multiply: 342792 bytes

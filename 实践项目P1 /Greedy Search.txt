@@ -1,0 +1,3 @@
+Block size: 128, Optimization level: 3, Time: 13.367311
+Block size: 128, Optimization level: 3, Time: 13.355537
+Block size: 128, Optimization level: 2, Time: 13.501466

@@ -1,0 +1,14 @@
+系统信息:
+OS: Darwin HUAWEI-MateBook-Pro-2.local 24.1.0 Darwin Kernel Version 24.1.0: Thu Oct 10 21:02:45 PDT 2024; root:xnu-11215.41.3~2/RELEASE_ARM64_T8112 arm64
+CPU: Apple M2
+Compiler: Apple clang version 16.0.0 (clang-1600.0.26.4)
+
+统计结果:
+          mean       std       min       max   speedup  improvement_percentage
+基础版本  0.052364  0.079150  0.043658  0.835937  1.000000                0.000000
+向量化   0.030741  0.041762  0.025484  0.439185  1.703428               70.342802
+AVX2  0.030679  0.040886  0.026126  0.435445  1.706846               70.684620
+
+性能提升分析:
+向量化 相比基础版本提升了 70.34%
+AVX2 相比基础版本提升了 70.68%

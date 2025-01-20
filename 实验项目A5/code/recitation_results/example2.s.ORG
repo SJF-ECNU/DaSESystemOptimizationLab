@@ -1,0 +1,825 @@
+	.section	__TEXT,__text,regular,pure_instructions
+	.build_version macos, 15, 0	sdk_version 15, 1
+	.globl	_test                           ## -- Begin function test
+	.p2align	4, 0x90
+_test:                                  ## @test
+Lfunc_begin0:
+	.file	0 "/Users/harry/work/\350\275\257\344\273\266\347\263\273\347\273\237\344\274\230\345\214\226/\345\256\236\351\252\214\351\241\271\347\233\256A5/recitation3" "example2.c" md5 0xae2f0cdd8519a52c6207f08b4cbb782f
+	.loc	0 9 0                           ## example2.c:9:0
+	.cfi_startproc
+## %bb.0:
+	##DEBUG_VALUE: test:a <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register %rbp
+Ltmp0:
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:y <- $rsi
+	xorl	%eax, %eax
+Ltmp1:
+	##DEBUG_VALUE: test:i <- 0
+	jmp	LBB0_1
+Ltmp2:
+	.p2align	4, 0x90
+LBB0_33:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	.loc	0 15 26 prologue_end            ## example2.c:15:26
+	addq	$16, %rax
+	cmpq	$65536, %rax                    ## imm = 0x10000
+	je	LBB0_34
+Ltmp3:
+LBB0_1:                                 ## =>This Inner Loop Header: Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	.loc	0 17 9                          ## example2.c:17:9
+	movdqa	(%rsi,%rax), %xmm0
+	movdqa	(%rdi,%rax), %xmm1
+	.loc	0 17 14 is_stmt 0               ## example2.c:17:14
+	pminub	%xmm0, %xmm1
+	pcmpeqb	%xmm0, %xmm1
+	movd	%xmm1, %ecx
+	notb	%cl
+Ltmp4:
+	.loc	0 15 3 is_stmt 1                ## example2.c:15:3
+	testb	$1, %cl
+	jne	LBB0_2
+Ltmp5:
+## %bb.3:                               ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	.loc	0 17 27                         ## example2.c:17:27
+	pextrb	$1, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_4
+Ltmp6:
+LBB0_5:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$2, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_6
+Ltmp7:
+LBB0_7:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$3, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_8
+Ltmp8:
+LBB0_9:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$4, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_10
+Ltmp9:
+LBB0_11:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$5, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_12
+Ltmp10:
+LBB0_13:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$6, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_14
+Ltmp11:
+LBB0_15:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$7, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_16
+Ltmp12:
+LBB0_17:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$8, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_18
+Ltmp13:
+LBB0_19:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$9, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_20
+Ltmp14:
+LBB0_21:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$10, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_22
+Ltmp15:
+LBB0_23:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$11, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_24
+Ltmp16:
+LBB0_25:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$12, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_26
+Ltmp17:
+LBB0_27:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$13, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_28
+Ltmp18:
+LBB0_29:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$14, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	jne	LBB0_30
+Ltmp19:
+LBB0_31:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$15, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_33
+	jmp	LBB0_32
+Ltmp20:
+	.p2align	4, 0x90
+LBB0_2:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$0, %xmm0, (%rdi,%rax)
+	pextrb	$1, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_5
+Ltmp21:
+LBB0_4:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$1, %xmm0, 1(%rdi,%rax)
+	pextrb	$2, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_7
+Ltmp22:
+LBB0_6:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$2, %xmm0, 2(%rdi,%rax)
+	pextrb	$3, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_9
+Ltmp23:
+LBB0_8:                                 ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$3, %xmm0, 3(%rdi,%rax)
+	pextrb	$4, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_11
+Ltmp24:
+LBB0_10:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$4, %xmm0, 4(%rdi,%rax)
+	pextrb	$5, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_13
+Ltmp25:
+LBB0_12:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$5, %xmm0, 5(%rdi,%rax)
+	pextrb	$6, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_15
+Ltmp26:
+LBB0_14:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$6, %xmm0, 6(%rdi,%rax)
+	pextrb	$7, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_17
+Ltmp27:
+LBB0_16:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$7, %xmm0, 7(%rdi,%rax)
+	pextrb	$8, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_19
+Ltmp28:
+LBB0_18:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$8, %xmm0, 8(%rdi,%rax)
+	pextrb	$9, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_21
+Ltmp29:
+LBB0_20:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$9, %xmm0, 9(%rdi,%rax)
+	pextrb	$10, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_23
+Ltmp30:
+LBB0_22:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$10, %xmm0, 10(%rdi,%rax)
+	pextrb	$11, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_25
+Ltmp31:
+LBB0_24:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$11, %xmm0, 11(%rdi,%rax)
+	pextrb	$12, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_27
+Ltmp32:
+LBB0_26:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$12, %xmm0, 12(%rdi,%rax)
+	pextrb	$13, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_29
+Ltmp33:
+LBB0_28:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$13, %xmm0, 13(%rdi,%rax)
+	pextrb	$14, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_31
+Ltmp34:
+LBB0_30:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$14, %xmm0, 14(%rdi,%rax)
+	pextrb	$15, %xmm1, %ecx
+	notb	%cl
+	testb	$1, %cl
+	je	LBB0_33
+Ltmp35:
+LBB0_32:                                ##   in Loop: Header=BB0_1 Depth=1
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	pextrb	$15, %xmm0, 15(%rdi,%rax)
+	jmp	LBB0_33
+Ltmp36:
+LBB0_34:
+	##DEBUG_VALUE: test:i <- 0
+	##DEBUG_VALUE: test:y <- $rsi
+	##DEBUG_VALUE: test:x <- $rdi
+	##DEBUG_VALUE: test:b <- $rsi
+	##DEBUG_VALUE: test:a <- $rdi
+	.loc	0 19 1 epilogue_begin           ## example2.c:19:1
+	popq	%rbp
+	retq
+Ltmp37:
+Lfunc_end0:
+	.cfi_endproc
+                                        ## -- End function
+	.file	1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types" "_uint8_t.h" md5 0x8b64ccf8c67b8c006b07b8daf1b49be5
+	.file	2 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types" "_uint64_t.h" md5 0x77fc5e91653260959605f129691cf9b1
+	.section	__DWARF,__debug_abbrev,regular,debug
+Lsection_abbrev:
+	.byte	1                               ## Abbreviation Code
+	.byte	17                              ## DW_TAG_compile_unit
+	.byte	1                               ## DW_CHILDREN_yes
+	.byte	37                              ## DW_AT_producer
+	.byte	37                              ## DW_FORM_strx1
+	.byte	19                              ## DW_AT_language
+	.byte	5                               ## DW_FORM_data2
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.ascii	"\202|"                         ## DW_AT_LLVM_sysroot
+	.byte	37                              ## DW_FORM_strx1
+	.ascii	"\357\177"                      ## DW_AT_APPLE_sdk
+	.byte	37                              ## DW_FORM_strx1
+	.byte	114                             ## DW_AT_str_offsets_base
+	.byte	23                              ## DW_FORM_sec_offset
+	.byte	16                              ## DW_AT_stmt_list
+	.byte	23                              ## DW_FORM_sec_offset
+	.byte	27                              ## DW_AT_comp_dir
+	.byte	37                              ## DW_FORM_strx1
+	.ascii	"\341\177"                      ## DW_AT_APPLE_optimized
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	17                              ## DW_AT_low_pc
+	.byte	27                              ## DW_FORM_addrx
+	.byte	18                              ## DW_AT_high_pc
+	.byte	6                               ## DW_FORM_data4
+	.byte	115                             ## DW_AT_addr_base
+	.byte	23                              ## DW_FORM_sec_offset
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	2                               ## Abbreviation Code
+	.byte	46                              ## DW_TAG_subprogram
+	.byte	1                               ## DW_CHILDREN_yes
+	.byte	17                              ## DW_AT_low_pc
+	.byte	27                              ## DW_FORM_addrx
+	.byte	18                              ## DW_AT_high_pc
+	.byte	6                               ## DW_FORM_data4
+	.byte	64                              ## DW_AT_frame_base
+	.byte	24                              ## DW_FORM_exprloc
+	.byte	122                             ## DW_AT_call_all_calls
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.byte	58                              ## DW_AT_decl_file
+	.byte	11                              ## DW_FORM_data1
+	.byte	59                              ## DW_AT_decl_line
+	.byte	11                              ## DW_FORM_data1
+	.byte	39                              ## DW_AT_prototyped
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	63                              ## DW_AT_external
+	.byte	25                              ## DW_FORM_flag_present
+	.ascii	"\341\177"                      ## DW_AT_APPLE_optimized
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	3                               ## Abbreviation Code
+	.byte	5                               ## DW_TAG_formal_parameter
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	2                               ## DW_AT_location
+	.byte	24                              ## DW_FORM_exprloc
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.byte	58                              ## DW_AT_decl_file
+	.byte	11                              ## DW_FORM_data1
+	.byte	59                              ## DW_AT_decl_line
+	.byte	11                              ## DW_FORM_data1
+	.byte	73                              ## DW_AT_type
+	.byte	19                              ## DW_FORM_ref4
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	4                               ## Abbreviation Code
+	.byte	52                              ## DW_TAG_variable
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	2                               ## DW_AT_location
+	.byte	24                              ## DW_FORM_exprloc
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.byte	58                              ## DW_AT_decl_file
+	.byte	11                              ## DW_FORM_data1
+	.byte	59                              ## DW_AT_decl_line
+	.byte	11                              ## DW_FORM_data1
+	.byte	73                              ## DW_AT_type
+	.byte	19                              ## DW_FORM_ref4
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	5                               ## Abbreviation Code
+	.byte	52                              ## DW_TAG_variable
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	28                              ## DW_AT_const_value
+	.byte	15                              ## DW_FORM_udata
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.byte	58                              ## DW_AT_decl_file
+	.byte	11                              ## DW_FORM_data1
+	.byte	59                              ## DW_AT_decl_line
+	.byte	11                              ## DW_FORM_data1
+	.byte	73                              ## DW_AT_type
+	.byte	19                              ## DW_FORM_ref4
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	6                               ## Abbreviation Code
+	.byte	55                              ## DW_TAG_restrict_type
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	73                              ## DW_AT_type
+	.byte	19                              ## DW_FORM_ref4
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	7                               ## Abbreviation Code
+	.byte	15                              ## DW_TAG_pointer_type
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	73                              ## DW_AT_type
+	.byte	19                              ## DW_FORM_ref4
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	8                               ## Abbreviation Code
+	.byte	22                              ## DW_TAG_typedef
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	73                              ## DW_AT_type
+	.byte	19                              ## DW_FORM_ref4
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.byte	58                              ## DW_AT_decl_file
+	.byte	11                              ## DW_FORM_data1
+	.byte	59                              ## DW_AT_decl_line
+	.byte	11                              ## DW_FORM_data1
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	9                               ## Abbreviation Code
+	.byte	36                              ## DW_TAG_base_type
+	.byte	0                               ## DW_CHILDREN_no
+	.byte	3                               ## DW_AT_name
+	.byte	37                              ## DW_FORM_strx1
+	.byte	62                              ## DW_AT_encoding
+	.byte	11                              ## DW_FORM_data1
+	.byte	11                              ## DW_AT_byte_size
+	.byte	11                              ## DW_FORM_data1
+	.byte	0                               ## EOM(1)
+	.byte	0                               ## EOM(2)
+	.byte	0                               ## EOM(3)
+	.section	__DWARF,__debug_info,regular,debug
+Lsection_info:
+Lcu_begin0:
+.set Lset0, Ldebug_info_end0-Ldebug_info_start0 ## Length of Unit
+	.long	Lset0
+Ldebug_info_start0:
+	.short	5                               ## DWARF version number
+	.byte	1                               ## DWARF Unit Type
+	.byte	8                               ## Address Size (in bytes)
+.set Lset1, Lsection_abbrev-Lsection_abbrev ## Offset Into Abbrev. Section
+	.long	Lset1
+	.byte	1                               ## Abbrev [1] 0xc:0x79 DW_TAG_compile_unit
+	.byte	0                               ## DW_AT_producer
+	.short	12                              ## DW_AT_language
+	.byte	1                               ## DW_AT_name
+	.byte	2                               ## DW_AT_LLVM_sysroot
+	.byte	3                               ## DW_AT_APPLE_sdk
+.set Lset2, Lstr_offsets_base0-Lsection_str_off ## DW_AT_str_offsets_base
+	.long	Lset2
+.set Lset3, Lline_table_start0-Lsection_line ## DW_AT_stmt_list
+	.long	Lset3
+	.byte	4                               ## DW_AT_comp_dir
+                                        ## DW_AT_APPLE_optimized
+	.byte	0                               ## DW_AT_low_pc
+.set Lset4, Lfunc_end0-Lfunc_begin0     ## DW_AT_high_pc
+	.long	Lset4
+.set Lset5, Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
+	.long	Lset5
+	.byte	2                               ## Abbrev [2] 0x25:0x3d DW_TAG_subprogram
+	.byte	0                               ## DW_AT_low_pc
+.set Lset6, Lfunc_end0-Lfunc_begin0     ## DW_AT_high_pc
+	.long	Lset6
+	.byte	1                               ## DW_AT_frame_base
+	.byte	86
+                                        ## DW_AT_call_all_calls
+	.byte	5                               ## DW_AT_name
+	.byte	0                               ## DW_AT_decl_file
+	.byte	9                               ## DW_AT_decl_line
+                                        ## DW_AT_prototyped
+                                        ## DW_AT_external
+                                        ## DW_AT_APPLE_optimized
+	.byte	3                               ## Abbrev [3] 0x30:0xa DW_TAG_formal_parameter
+	.byte	1                               ## DW_AT_location
+	.byte	85
+	.byte	6                               ## DW_AT_name
+	.byte	0                               ## DW_AT_decl_file
+	.byte	9                               ## DW_AT_decl_line
+	.long	98                              ## DW_AT_type
+	.byte	3                               ## Abbrev [3] 0x3a:0xa DW_TAG_formal_parameter
+	.byte	1                               ## DW_AT_location
+	.byte	84
+	.byte	9                               ## DW_AT_name
+	.byte	0                               ## DW_AT_decl_file
+	.byte	9                               ## DW_AT_decl_line
+	.long	98                              ## DW_AT_type
+	.byte	4                               ## Abbrev [4] 0x44:0xa DW_TAG_variable
+	.byte	1                               ## DW_AT_location
+	.byte	85
+	.byte	10                              ## DW_AT_name
+	.byte	0                               ## DW_AT_decl_file
+	.byte	12                              ## DW_AT_decl_line
+	.long	103                             ## DW_AT_type
+	.byte	4                               ## Abbrev [4] 0x4e:0xa DW_TAG_variable
+	.byte	1                               ## DW_AT_location
+	.byte	84
+	.byte	11                              ## DW_AT_name
+	.byte	0                               ## DW_AT_decl_file
+	.byte	13                              ## DW_AT_decl_line
+	.long	103                             ## DW_AT_type
+	.byte	5                               ## Abbrev [5] 0x58:0x9 DW_TAG_variable
+	.byte	0                               ## DW_AT_const_value
+	.byte	12                              ## DW_AT_name
+	.byte	0                               ## DW_AT_decl_file
+	.byte	10                              ## DW_AT_decl_line
+	.long	120                             ## DW_AT_type
+	.byte	0                               ## End Of Children Mark
+	.byte	6                               ## Abbrev [6] 0x62:0x5 DW_TAG_restrict_type
+	.long	103                             ## DW_AT_type
+	.byte	7                               ## Abbrev [7] 0x67:0x5 DW_TAG_pointer_type
+	.long	108                             ## DW_AT_type
+	.byte	8                               ## Abbrev [8] 0x6c:0x8 DW_TAG_typedef
+	.long	116                             ## DW_AT_type
+	.byte	8                               ## DW_AT_name
+	.byte	1                               ## DW_AT_decl_file
+	.byte	31                              ## DW_AT_decl_line
+	.byte	9                               ## Abbrev [9] 0x74:0x4 DW_TAG_base_type
+	.byte	7                               ## DW_AT_name
+	.byte	8                               ## DW_AT_encoding
+	.byte	1                               ## DW_AT_byte_size
+	.byte	8                               ## Abbrev [8] 0x78:0x8 DW_TAG_typedef
+	.long	128                             ## DW_AT_type
+	.byte	14                              ## DW_AT_name
+	.byte	2                               ## DW_AT_decl_file
+	.byte	31                              ## DW_AT_decl_line
+	.byte	9                               ## Abbrev [9] 0x80:0x4 DW_TAG_base_type
+	.byte	13                              ## DW_AT_name
+	.byte	7                               ## DW_AT_encoding
+	.byte	8                               ## DW_AT_byte_size
+	.byte	0                               ## End Of Children Mark
+Ldebug_info_end0:
+	.section	__DWARF,__debug_str_offs,regular,debug
+Lsection_str_off:
+	.long	64                              ## Length of String Offsets Set
+	.short	5
+	.short	0
+Lstr_offsets_base0:
+	.section	__DWARF,__debug_str,regular,debug
+Linfo_string:
+	.asciz	"Apple clang version 16.0.0 (clang-1600.0.26.4)" ## string offset=0
+	.asciz	"example2.c"                    ## string offset=47
+	.asciz	"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk" ## string offset=58
+	.asciz	"MacOSX.sdk"                    ## string offset=110
+	.asciz	"/Users/harry/work/\350\275\257\344\273\266\347\263\273\347\273\237\344\274\230\345\214\226/\345\256\236\351\252\214\351\241\271\347\233\256A5/recitation3" ## string offset=121
+	.asciz	"test"                          ## string offset=185
+	.asciz	"a"                             ## string offset=190
+	.asciz	"uint8_t"                       ## string offset=192
+	.asciz	"unsigned char"                 ## string offset=200
+	.asciz	"b"                             ## string offset=214
+	.asciz	"x"                             ## string offset=216
+	.asciz	"y"                             ## string offset=218
+	.asciz	"i"                             ## string offset=220
+	.asciz	"uint64_t"                      ## string offset=222
+	.asciz	"unsigned long long"            ## string offset=231
+	.section	__DWARF,__debug_str_offs,regular,debug
+	.long	0
+	.long	47
+	.long	58
+	.long	110
+	.long	121
+	.long	185
+	.long	190
+	.long	200
+	.long	192
+	.long	214
+	.long	216
+	.long	218
+	.long	220
+	.long	231
+	.long	222
+	.section	__DWARF,__debug_addr,regular,debug
+Lsection_info0:
+.set Lset7, Ldebug_addr_end0-Ldebug_addr_start0 ## Length of contribution
+	.long	Lset7
+Ldebug_addr_start0:
+	.short	5                               ## DWARF version number
+	.byte	8                               ## Address size
+	.byte	0                               ## Segment selector size
+Laddr_table_base0:
+	.quad	Lfunc_begin0
+Ldebug_addr_end0:
+	.section	__DWARF,__debug_names,regular,debug
+Ldebug_names_begin:
+.set Lset8, Lnames_end0-Lnames_start0   ## Header: unit length
+	.long	Lset8
+Lnames_start0:
+	.short	5                               ## Header: version
+	.short	0                               ## Header: padding
+	.long	1                               ## Header: compilation unit count
+	.long	0                               ## Header: local type unit count
+	.long	0                               ## Header: foreign type unit count
+	.long	5                               ## Header: bucket count
+	.long	5                               ## Header: name count
+.set Lset9, Lnames_abbrev_end0-Lnames_abbrev_start0 ## Header: abbreviation table size
+	.long	Lset9
+	.long	8                               ## Header: augmentation string size
+	.ascii	"LLVM0700"                      ## Header: augmentation string
+.set Lset10, Lcu_begin0-Lsection_info   ## Compilation unit 0
+	.long	Lset10
+	.long	1                               ## Bucket 0
+	.long	2                               ## Bucket 1
+	.long	3                               ## Bucket 2
+	.long	0                               ## Bucket 3
+	.long	4                               ## Bucket 4
+	.long	857652610                       ## Hash in Bucket 0
+	.long	789719536                       ## Hash in Bucket 1
+	.long	2090756197                      ## Hash in Bucket 2
+	.long	290821634                       ## Hash in Bucket 4
+	.long	-104093792                      ## Hash in Bucket 4
+	.long	231                             ## String in Bucket 0: unsigned long long
+	.long	192                             ## String in Bucket 1: uint8_t
+	.long	185                             ## String in Bucket 2: test
+	.long	222                             ## String in Bucket 4: uint64_t
+	.long	200                             ## String in Bucket 4: unsigned char
+.set Lset11, Lnames4-Lnames_entries0    ## Offset in Bucket 0
+	.long	Lset11
+.set Lset12, Lnames1-Lnames_entries0    ## Offset in Bucket 1
+	.long	Lset12
+.set Lset13, Lnames0-Lnames_entries0    ## Offset in Bucket 2
+	.long	Lset13
+.set Lset14, Lnames3-Lnames_entries0    ## Offset in Bucket 4
+	.long	Lset14
+.set Lset15, Lnames2-Lnames_entries0    ## Offset in Bucket 4
+	.long	Lset15
+Lnames_abbrev_start0:
+	.ascii	"\230$"                         ## Abbrev code
+	.byte	36                              ## DW_TAG_base_type
+	.byte	3                               ## DW_IDX_die_offset
+	.byte	19                              ## DW_FORM_ref4
+	.byte	4                               ## DW_IDX_parent
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	0                               ## End of abbrev
+	.byte	0                               ## End of abbrev
+	.ascii	"\230\026"                      ## Abbrev code
+	.byte	22                              ## DW_TAG_typedef
+	.byte	3                               ## DW_IDX_die_offset
+	.byte	19                              ## DW_FORM_ref4
+	.byte	4                               ## DW_IDX_parent
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	0                               ## End of abbrev
+	.byte	0                               ## End of abbrev
+	.ascii	"\230."                         ## Abbrev code
+	.byte	46                              ## DW_TAG_subprogram
+	.byte	3                               ## DW_IDX_die_offset
+	.byte	19                              ## DW_FORM_ref4
+	.byte	4                               ## DW_IDX_parent
+	.byte	25                              ## DW_FORM_flag_present
+	.byte	0                               ## End of abbrev
+	.byte	0                               ## End of abbrev
+	.byte	0                               ## End of abbrev list
+Lnames_abbrev_end0:
+Lnames_entries0:
+Lnames4:
+L3:
+	.ascii	"\230$"                         ## Abbreviation code
+	.long	128                             ## DW_IDX_die_offset
+	.byte	0                               ## DW_IDX_parent
+                                        ## End of list: unsigned long long
+Lnames1:
+L2:
+	.ascii	"\230\026"                      ## Abbreviation code
+	.long	108                             ## DW_IDX_die_offset
+	.byte	0                               ## DW_IDX_parent
+                                        ## End of list: uint8_t
+Lnames0:
+L4:
+	.ascii	"\230."                         ## Abbreviation code
+	.long	37                              ## DW_IDX_die_offset
+	.byte	0                               ## DW_IDX_parent
+                                        ## End of list: test
+Lnames3:
+L1:
+	.ascii	"\230\026"                      ## Abbreviation code
+	.long	120                             ## DW_IDX_die_offset
+	.byte	0                               ## DW_IDX_parent
+                                        ## End of list: uint64_t
+Lnames2:
+L0:
+	.ascii	"\230$"                         ## Abbreviation code
+	.long	116                             ## DW_IDX_die_offset
+	.byte	0                               ## DW_IDX_parent
+                                        ## End of list: unsigned char
+	.p2align	2, 0x0
+Lnames_end0:
+.subsections_via_symbols
+	.section	__DWARF,__debug_line,regular,debug
+Lsection_line:
+Lline_table_start0:

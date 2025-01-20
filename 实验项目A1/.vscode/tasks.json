@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",  // 任务名称
+            "type": "shell",    // 使用 shell 执行任务
+            "command": "make",  // 执行的命令
+            "args": [],         // 可以在这里添加参数，如果不需要可以留空
+            "group": {
+                "kind": "build",
+                "isDefault": true // 将其设置为默认构建任务
+            },
+            "problemMatcher": ["$gcc"], // 使用 GCC 的问题匹配器
+            "detail": "编译项目" // 任务描述
+        }
+    ]
+}
